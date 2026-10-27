@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="ရွှေပေလွှာ ဒစ်ဂျစ်တယ်စာကြည့်တိုက်။ စာပေ၊ ဓာတ်ပုံနှင့် PDF စာအုပ်များကို လေ့လာဖတ်ရှုပါ။">
+
+  <title>ရွှေပေလွှာ | ဒစ်ဂျစ်တယ်စာကြည့်တိုက်</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="brand">
+      <span class="brand-icon">❧</span>
+      <span>
+        <strong>ရွှေပေလွှာ</strong>
+        <small>ဒစ်ဂျစ်တယ်စာကြည့်တိုက်</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="မီနူးဖွင့်ရန်"
+      aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav" id="mainNav">
+      <a href="#home">ပင်မစာမျက်နှာ</a>
+      <a href="#library">စာပေများ</a>
+      <a href="#gallery">ဓာတ်ပုံများ</a>
+      <a href="#pdfs">PDF စာအုပ်များ</a>
+      <a href="#about">အကြောင်းအရာ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">✦ အသိပညာ၏ ရွှေတိုက် ✦</span>
+
+        <h1>စာပေဖြင့် ဘဝကို<br>အလင်းရောင်ပေးပါ</h1>
+
+        <p>
+          စာပေကောင်းများ၊ မှတ်တမ်းဓာတ်ပုံများနှင့်
+          PDF စာအုပ်များကို တစ်နေရာတည်းတွင်
+          လေ့လာဖတ်ရှုနိုင်သော နေရာလေးတစ်ခု။
+        </p>
+
+        <a href="#library" class="primary-btn">
+          စာပေများ ဖတ်ရှုရန် ↗
+        </a>
+      </div>
+
+      <div class="hero-decoration" aria-hidden="true">
+        <div class="book-circle">📚</div>
+        <span class="decoration-star">✦</span>
+        <span class="decoration-leaf">❧</span>
+      </div>
+    </section>
+
+    <section class="search-section">
+      <label for="searchInput">စာကြည့်တိုက်အတွင်း ရှာဖွေပါ</label>
+
+      <div class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="စာအုပ်အမည်၊ စာရေးသူ ရှာရန်..."
+          autocomplete="off"
+        >
+        <button id="searchButton" type="button">ရှာမယ်</button>
+      </div>
+    </section>
+
+    <section class="section" id="library">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">OUR COLLECTION</span>
+          <h2>စာပေတိုက်</h2>
+          <p>နှစ်သက်ရာ စာပေများကို ရွေးချယ်ဖတ်ရှုပါ။</p>
+        </div>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">
+          အားလုံး
+        </button>
+        <button class="filter-btn" data-filter="literature">
+          စာပေ
+        </button>
+        <button class="filter-btn" data-filter="poetry">
+          ကဗျာ
+        </button>
+        <button class="filter-btn" data-filter="knowledge">
+          ဗဟုသုတ
+        </button>
+      </div>
+
+      <div class="library-grid" id="articleGrid">
+
+        <article class="article-card"
+          data-category="literature"
+          data-title="စာဖတ်ခြင်း၏ အလှတရား"
+          data-author="ရွှေပေလွှာ"
+          data-content="စာဖတ်ခြင်းသည် အသိပညာ စာပေ">
+          <div class="card-art art-one">စာပေ</div>
+          <div class="card-body">
+            <span class="tag">စာပေ</span>
+            <h3>စာဖတ်ခြင်း၏ အလှတရား</h3>
+            <p>စာအုပ်တစ်အုပ်က ကမ္ဘာသစ်တစ်ခုကို ဖွင့်လှစ်ပေးနိုင်ပါတယ်။</p>
+            <div class="card-footer">
+              <span>ရွှေပေလွှာ</span>
+              <button class="text-btn read-btn" type="button">
+                ဖတ်ရှုရန် ↗
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card"
+          data-category="poetry"
+          data-title="ကဗျာနှင့် ခံစားမှု"
+          data-author="ရွှေပေလွှာ"
+          data-content="ကဗျာ ခံစားမှု စာပေ">
+          <div class="card-art art-two">ကဗျာ</div>
+          <div class="card-body">
+            <span class="tag">ကဗျာ</span>
+            <h3>ကဗျာနှင့် ခံစားမှု</h3>
+            <p>စကားလုံးလေးများထဲက ခံစားချက်တို့၏ အလှတရား။</p>
+            <div class="card-footer">
+              <span>ရွှေပေလွှာ</span>
+              <button class="text-btn read-btn" type="button">
+                ဖတ်ရှုရန် ↗
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card"
+          data-category="knowledge"
+          data-title="အသိပညာနှင့် အနာဂတ်"
+          data-author="ရွှေပေလွှာ"
+          data-content="အသိပညာ အနာဂတ် ပညာရေး">
+          <div class="card-art art-three">အသိပညာ</div>
+          <div class="card-body">
+            <span class="tag">ဗဟုသုတ</span>
+            <h3>အသိပညာနှင့် အနာဂတ်</h3>
+            <p>လေ့လာသင်ယူမှုမှတစ်ဆင့် အနာဂတ်ကို တည်ဆောက်ပါ။</p>
+            <div class="card-footer">
+              <span>ရွှေပေလွှာ</span>
+              <button class="text-btn read-btn" type="button">
+                ဖတ်ရှုရန် ↗
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="empty-message" id="emptyMessage" hidden>
+        ရှာဖွေမှုနှင့် ကိုက်ညီသော စာပေ မတွေ့ရှိပါ။
+      </p>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">VISUAL ARCHIVE</span>
+          <h2>ဓာတ်ပုံပြခန်း</h2>
+          <p>စာပေနှင့် မှတ်တမ်းဓာတ်ပုံများ။</p>
+        </div>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=700&q=80"
+            alt="စာအုပ်များဖြင့် ပြည့်နေသော စာကြည့်တိုက်"
+            loading="lazy">
+          <figcaption>စာအုပ်များ၏ ကမ္ဘာ</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=80"
+            alt="စာရေးသားနေသော စာရေးသူ"
+            loading="lazy">
+          <figcaption>စာပေရေးသားမှု</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=700&q=80"
+            alt="စာအုပ်နှင့် လေ့လာသင်ယူမှု"
+            loading="lazy">
+          <figcaption>လေ့လာသင်ယူခြင်း</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section pdf-section" id="pdfs">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">DIGITAL BOOKS</span>
+          <h2>PDF စာအုပ်တိုက်</h2>
+          <p>ဒစ်ဂျစ်တယ်စာအုပ်များကို ဖတ်ရှုရန်။</p>
+        </div>
+      </div>
+
+      
+<div class="pdf-card">
+  <div class="pdf-icon">PDF</div>
+
+  <div class="pdf-info">
+    <h3>ကျွန်တော့်ရဲ့ ပထမဆုံး PDF စာအုပ်</h3>
+    <p>စာအုပ်ကို ဖွင့်ဖတ်ရှုနိုင်ပါတယ်။</p>
+  </div>
+
+  <a
+    class="pdf-open"
+    href="pdfs/my-book.pdf"
+    target="_blank"
+    rel="noopener"
+  >
+    ဖတ်ရှုရန် ↗
+  </a>
+</div>
+
+    </section>
+
+    <section class="about-section" id="about">
+      <span class="eyebrow">ABOUT OUR LIBRARY</span>
+      <h2>စာပေကို မြတ်နိုးသူများအတွက်</h2>
+      <p>
+        ရွှေပေလွှာသည် စာပေ၊ ဓာတ်ပုံနှင့် ဒစ်ဂျစ်တယ်စာအုပ်များကို
+        စုစည်းမျှဝေလိုသော ရည်ရွယ်ချက်ဖြင့် တည်ဆောက်ထားသည့်
+        အများပြည်သူဖတ်ရှုနိုင်သော စာကြည့်တိုက်တစ်ခု ဖြစ်ပါသည်။
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">❧ ရွှေပေလွှာ</div>
+    <p>စာပေကို မြတ်နိုးပါ။ အသိပညာကို မျှဝေပါ။</p>
+    <small>© 2026 ရွှေပေလွှာ ဒစ်ဂျစ်တယ်စာကြည့်တိုက်</small>
+  </footer>
+
+  <dialog id="articleDialog" class="article-dialog">
+    <div class="dialog-top">
+      <span class="eyebrow">ရွှေပေလွှာ စာပေတိုက်</span>
+      <button id="closeDialog" class="close-btn"
+        aria-label="ပိတ်ရန်">✕</button>
+    </div>
+    <h2 id="dialogTitle"></h2>
+    <p class="dialog-author">ရွှေပေလွှာ</p>
+    <div id="dialogContent" class="dialog-content"></div>
+  </dialog>
+
+</body>
+</html>
